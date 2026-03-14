@@ -58,10 +58,14 @@ An AI-powered web application that identifies movies and TV shows from screensho
    - Copy your key
 
 5. **Configure API key**
-   - Open `app.py`
-   - Replace `YOUR_API_KEY_HERE` with your actual API key:
-   ```python
-   GEMINI_API_KEY = 'AIzaSy...'
+   - Set an environment variable named `GEMINI_API_KEY`
+   - Windows PowerShell:
+   ```powershell
+   $env:GEMINI_API_KEY = "your_key_here"
+   ```
+   - macOS/Linux:
+   ```bash
+   export GEMINI_API_KEY="your_key_here"
    ```
 
 6. **Run the application**

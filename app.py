@@ -9,8 +9,11 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-# Configure Gemini - REPLACE WITH YOUR API KEY
-GEMINI_API_KEY = 'AIzaSyDYVZ3e4NmpDyJh0c56gbpVRAwhWRJlQ2Y'
+# Configure Gemini from environment variable
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+
+if not GEMINI_API_KEY:
+    raise RuntimeError('GEMINI_API_KEY environment variable is not set')
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash')
