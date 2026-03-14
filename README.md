@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎬 Movie Identifier
 
 An AI-powered web application that identifies movies and TV shows from screenshots. Perfect for when you see random clips on TikTok, YouTube, or Instagram and want to know what movie they're from!
@@ -267,3 +268,6 @@ Project Link: [https://github.com/YOUR_USERNAME/movie-identifier](https://github
 ---
 
 Made with ❤️ and AI
+=======
+# Movie_identifier
+>>>>>>> b6672f7dffc6a7526d5ca499902e00f3b85ecc3b
